@@ -10,4 +10,5 @@ sleep 2
 $at d $apk
 read -p " {sl0p} Please Enter The Name Of The folder: " afl
 locate $afl
-$gr -nr "$grst1" $afl | $gr $grst2 
+$gr -nr "$grst1" $afl
+$gr -nr "$grst2" $afl 
