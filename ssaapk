@@ -2,11 +2,12 @@
 
 at="apktool"
 gr="grep"
-grs="grep -nr "token" catchv1.0"
+grst1="token"
+grst2="git"
 read -p " {sl0p} Please Enter The Name Of The Apk: " apk
 echo " {sl0p} We Gonna Extract The $apk"
 sleep 2
 $at d $apk
 read -p " {sl0p} Please Enter The Name Of The folder: " afl
 locate $afl
-$gr -nr "$grs" $afl
+$gr -nr "$grst1" $afl | $gr $grst2 
